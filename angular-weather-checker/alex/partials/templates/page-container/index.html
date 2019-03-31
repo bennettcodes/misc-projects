@@ -1,0 +1,18 @@
+<div id="page-container" ng-controller="pagesCtrl">
+    
+    <div id="temp-page-container" ng-mouseup="activatePage.about()"></div>
+
+    <div id="home-page-container" class="inner-page-container page-active">
+        <home-page></home-page>
+    </div>
+    <div id="about-page-container" class="inner-page-container page-inactive">
+        <about-page></about-page>
+    </div>
+    <div id="work-page-container" class="inner-page-container page-inactive">
+        <work-page></work-page>
+    </div>
+    <div id="contact-page-container" class="inner-page-container page-inactive">
+        <contact-page></contact-page>
+    </div>
+
+</div>

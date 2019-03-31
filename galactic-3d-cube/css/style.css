@@ -1,0 +1,75 @@
+body, html {
+	margin:0;
+	padding:0;
+}
+
+#outer {
+    width:100vw;
+    height:100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    overflow: hidden;
+	margin:0;
+    opacity:0;
+	padding:0;
+    float:left;
+}
+
+.container {
+    width: 30vh;
+    height: 30vh;
+    position: relative;
+    perspective: 1500px;
+    perspective-origin: 50% 50%;
+}
+
+#cube {
+    width: 30vh;
+    height: 30vh;
+    z-index:500;
+    position: absolute;
+    transform-style: preserve-3d;
+}
+
+#cube figure {
+    width: 30vh;
+    height: 30vh;
+    display: block;
+    position: absolute;
+    border: 2px solid rgba(0,0,0,1);
+    transform: translateZ( -100px );
+    background-color:rgba(255,255,255,0.8);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    backface-visibility: visible;
+    
+    color:rgba(0,0,0,1);
+    font-family: 'Lato',sans-serif;
+    overflow: hidden;
+    font-weight:900;
+    text-align: center;
+    line-height: 30vh;
+    font-size:12vh;
+}
+
+#cube .front {
+    transform: rotateY(   0deg ) translateZ( 15vh );
+}
+#cube .back {
+    transform: rotateX( 180deg ) translateZ( 15vh ) rotateZ(180deg);
+}
+#cube .right{
+    transform: rotateY(  90deg ) translateZ( 15vh );
+}
+#cube .left {
+    transform: rotateY( -90deg ) translateZ( 15vh );
+}
+#cube .top {
+    transform: rotateX(  90deg ) translateZ( 15vh );
+}
+#cube .bottom {
+    transform: rotateX( -90deg ) translateZ( 15vh );
+}

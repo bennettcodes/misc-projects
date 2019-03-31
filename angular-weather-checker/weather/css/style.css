@@ -1,0 +1,505 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-scrolling: touch;
+    -moz-overflow-scrolling: touch;
+    -o-overflow-scrolling: touch;
+    overflow-scrolling: touch;
+}
+
+p,
+a,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.int-degree {
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-style: italic;
+    letter-spacing: 5px;
+}
+
+h1,
+.int-degree {
+    font-size: 125px;
+    color: #ffffff !important;
+    letter-spacing: 0;
+    line-height: 150px;
+    font-family: 'Open Sans', sans-serif !important;
+    text-shadow: 4px 3px 0px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-weight: 100;
+}
+
+.int-degree {
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 100px;
+    font-weight: 700 !important;
+}
+
+.smaller-h2 {
+    font-size: 40px;
+    color: rgba(0, 0, 0, 1);
+    font-weight: 700 !important;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 700;
+    /*color:rgba(0,0,0,1);*/
+}
+
+* {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.mobile {
+    display: none;
+}
+
+#container-outer {
+    width: 100%;
+    height: auto;
+    position: relative;
+    float: left;
+}
+
+#container-bg {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    z-index: -2;
+}
+
+#container-inner {
+    max-width: 860px;
+    height: auto;
+    padding: 50px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#grey-bg {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 1);
+    opacity: 0.1;
+    top: 0;
+    left: 0;
+    z-index: -3;
+}
+
+#white-fade {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+0,1+100 */
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff', GradientType=0);
+    /* IE6-9 */
+}
+
+#tile-container {
+    width: 100%;
+    height: auto;
+    margin: 30px 0;
+    position: relative;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    float: left;
+}
+
+.tile {
+    width: calc(50% - 20px);
+    height: auto;
+    margin: 10px;
+    position: relative;
+    text-align: left;
+    float: left;
+}
+
+.bg-primary {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    color: #ffffff !important;
+    font-weight: 900;
+}
+
+.page-link {
+    display: block;
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    position: relative;
+    color: #000000;
+    margin: 0 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+    float: left;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.days-header {
+    display: block;
+    width: auto;
+    height: 50px;
+    line-height: 50px;
+    position: relative;
+    float: left;
+    font-size: 30px;
+    margin: 0 7px 0 10px;
+    text-decoration: none;
+}
+
+.forecast-info {
+    display: block;
+    width: auto;
+    height: 50px;
+    line-height: 50px;
+    position: relative;
+    float: left;
+    padding-left: 13px;
+    /*font-style: italic;*/
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.weather-stats {
+    width: 100%;
+    min-height: 150px;
+    position: relative;
+    box-shadow: inset 0px -30px 50px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    float: left;
+}
+
+.weather-large {
+    width: 40%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    left: 25px;
+}
+
+.weather-small {
+    width: 72%;
+    height: auto;
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+}
+
+.day-small-text h3 {
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 1em;
+    font-family: 'Open Sans', sans-serif !important;
+    text-shadow: 4px 3px 0px rgba(0, 0, 0, 0.1);
+    letter-spacing: 0 !important;
+    /*font-style: normal !important;*/
+}
+
+.date-small-text h3 {
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: 0;
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Open Sans', sans-serif;
+    text-shadow: 4px 3px 0px rgba(0, 0, 0, 0.1);
+    line-height: 1em;
+}
+
+.weather-small-text {
+    width: 100%;
+    height: auto;
+    position: relative;
+    text-align: right;
+    float: left;
+}
+
+.form-control {
+    width: calc(100% - 20px);
+    height: 50px;
+    padding: 10px;
+}
+
+input {
+    font-size: 30px !important;
+    font-family: 'Open Sans', sans-serif !important;
+    /*font-style: italic;*/
+    font-weight: 100;
+    border-top: 1px solid rgba(0, 0, 0, 0.05) !important;
+    border-left: 1px solid rgba(0, 0, 0, 0.05) !important;
+    border-right: 1px solid rgba(0, 0, 0, 0.05) !important;
+    border-bottom: none !important;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05) !important;
+    line-height: 50px;
+}
+
+#link-list {
+    width: auto;
+    height: auto;
+    position: relative;
+    margin: 30px auto;
+}
+
+@media only screen and (max-device-width: 1080px) {
+    h1,
+    .int-degree {
+        font-size: 20vw !important;
+        line-height: 25vw !important;
+    }
+    h2 {
+        font-size: 15vw !important;
+    }
+    input {
+        font-size: 8vw !important;
+        line-height: initial !important;
+        font-style: normal !important;
+    }
+    .smaller-h2 {
+        font-size: 5vw !important;
+    }
+    h3 {
+        font-size: 5vw !important;
+    }
+    .weather-stats {
+        min-height: 25vw !important
+    }
+    #days {
+        width: auto !important;
+        position: relative;
+        float: right;
+    }
+    .forecast-info {
+        height: auto !important;
+        line-height: 1em !important;
+        padding: 7vw 0 !important;
+        font-style: normal !important;
+        font-size: 5vw !important;
+        letter-spacing: 0.5vw !important;
+        text-transform: uppercase !important;
+    }
+    #link-list {
+        margin: 60px 0 !important;
+    }
+    .days-header {
+        font-family: 'Open Sans Condensed', sans-serif !important;
+        font-size: 5vw !important;
+        font-weight: 700 !important;
+        width: auto !important;
+        height: 10vw !important;
+        margin: 0 !important;
+        line-height: 10vw !important;
+        text-transform: uppercase !important;
+        letter-spacing: 0.5vw !important;
+    }
+    .page-link {
+        width: 20vw !important;
+        height: 10vw !important;
+        margin: 0 0 0 4vw !important;
+        line-height: 10vw !important;
+        font-size: 5vw !important;
+        font-style: normal !important;
+    }
+    #container-inner {
+        width: calc(100% - 100px) !important;
+        max-width: 100% !important;
+        padding: 200px 50px !important;
+    }
+    #tile-container {
+        margin: 0 0 30px !important;
+    }
+    .tile {
+        width: calc(100% - 20px) !important;
+        margin: 0 0 4vw 0 !important;
+    }
+    .weather-large h1,
+    .int-degree {
+        font-style: normal !important;
+    }
+    .weather-large {
+        width: auto !important;
+        left: 5vw !important;
+    }
+    .date-small-text h3 {
+        font-style: normal !important;
+    }
+    .day-small-text h3 {
+        font-size: 10vw !important;
+        font-style: normal !important;
+    }
+    .weather-small {
+        width: auto !important;
+        height: auto !important;
+        bottom: 5.5vw !important;
+        right: 5vw !important;
+    }
+    .weather-small-text {
+        /*text-align: center !important;*/
+        font-size: 4vw !important;
+    }
+    .mobile {
+        display: inline !important;
+    }
+    .form-control {
+        height: 10vw !important;
+        margin-top: 60px !important;
+    }
+    h2 {
+        line-height: 50px !important;
+    }
+    .smaller-h2 {
+        line-height: 0 !important;
+    }
+}
+
+@media (max-width: 960px) {
+    h1,
+    .int-degree {
+        font-size: 20vw !important;
+        line-height: 25vw !important;
+    }
+    h2 {
+        font-size: 15vw !important;
+    }
+    #days {
+        width: auto !important;
+        position: relative;
+        float: left;
+    }
+    #link-list {
+        margin: 60px 0 !important;
+    }
+    .forecast-info {
+        height: auto !important;
+        line-height: 1em !important;
+        padding: 7vw 0 !important;
+        font-style: normal !important;
+        font-size: 5vw !important;
+        letter-spacing: 1vw !important;
+        text-transform: uppercase !important;
+    }
+    input {
+        font-size: 8vw !important;
+        line-height: initial !important;
+        font-style: normal !important;
+    }
+    .smaller-h2 {
+        font-size: 10vw !important;
+    }
+    h3 {
+        font-size: 5vw !important;
+    }
+    .weather-stats {
+        min-height: 25vw !important
+    }
+    .days-header {
+        font-family: 'Open Sans Condensed', sans-serif !important;
+        font-size: 5vw !important;
+        font-weight: 700 !important;
+        width: auto !important;
+        height: 10vw !important;
+        margin: 0 !important;
+        line-height: 10vw !important;
+        text-transform: uppercase !important;
+        letter-spacing: 0.5vw !important;
+    }
+    .page-link {
+        width: 20vw !important;
+        height: 10vw !important;
+        margin: 0 0 0 4vw !important;
+        line-height: 10vw !important;
+        font-size: 5vw !important;
+        font-style: normal !important;
+    }
+    #container-inner {
+        width: calc(100% - 100px) !important;
+        max-width: 100% !important;
+        padding: 200px 50px !important;
+    }
+    #tile-container {
+        margin: 0 0 30px !important;
+    }
+    .tile {
+        width: calc(100% - 20px) !important;
+        margin: 0 0 4vw 0 !important;
+    }
+    .weather-large h1,
+    .int-degree {
+        font-style: normal !important;
+    }
+    .weather-large {
+        width: auto !important;
+        left: 5vw !important;
+    }
+    .date-small-text h3 {
+        font-style: normal !important;
+    }
+    .day-small-text h3 {
+        font-size: 10vw !important;
+        font-style: normal !important;
+    }
+    .weather-small {
+        width: auto !important;
+        height: auto !important;
+        bottom: 5.5vw !important;
+        right: 5vw !important;
+    }
+    .weather-small-text {
+        /*text-align: center !important;*/
+        font-size: 4vw !important;
+    }
+    .mobile {
+        display: inline !important;
+    }
+    .form-control {
+        height: 10vw !important;
+        margin-top: 60px !important;
+    }
+    h2 {
+        line-height: 50px !important;
+    }
+    .smaller-h2 {
+        line-height: 0 !important;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    /* remove scrollbar space */
+    background: transparent;
+    /* optional: just make scrollbar invisible */
+}
+
+textarea:focus,
+input:focus {
+    outline: none;
+}

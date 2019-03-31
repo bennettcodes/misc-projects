@@ -1,0 +1,27 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+
+* {
+    font-family:'Open Sans Condensed', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, li {
+    margin: 0;
+    padding: 0;
+}
+
+.full-view {
+    width: 100vw;
+    height: 100vh;
+}
+
+#container {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}

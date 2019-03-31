@@ -1,0 +1,40 @@
+html{
+    height: 100%;
+}
+body {
+    overflow: hidden;
+    min-height: 100%;
+    padding: 100px;
+}
+
+.container {
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 50px;
+    width: 100px;
+    height: 100px;
+}
+
+.circle {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+.yellow {
+    background-color: #ffff00;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.red {
+    background-color: red;
+}
+
+.grey {
+    background-color: grey;
+}

@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="us">
+<head>
+<meta charset="utf-8">
+<title>3D Cube</title>
+	<meta name="format-detection" content="telephone=no">
+<link rel='shortcut icon' href='favicon.gif' type='image/x-icon'/ >
+<link href="https://fonts.googleapis.com/css?family=Oswald:400,300,700|Merriweather:400,900italic|Playfair+Display+SC:900italic,400italic,900,400|Arizonia|Lato:100,200,200italic,300,300italic,700,700italic,900italic,900" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/jquery-ui.css" rel="stylesheet">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<style>
+    
+</style>
+</head>
+<body>
+    <div id="outer">
+<section class="container">
+  <div id="cube">
+    <figure class="front">1</figure>
+    <figure class="back">2</figure>
+    <figure class="right">3</figure>
+    <figure class="left">4</figure>
+    <figure class="top">5</figure>
+    <figure class="bottom">6</figure>
+  </div>
+</section>
+    </div>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/jquery-ui.min.js"></script> 
+<script src="js/jquery-initial.js"></script>  
+<script src="js/velocity.min.js"></script>
+<script src="js/velocity.ui.min.js"></script>
+<script src="js/js.cookie.js"></script>
+<script src="js/jquery.form.min.js"></script> 
+<script src="js/jquery.validate.min.js"></script> 
+<script src="js/smart-form.js"></script> 
+<script src="js/jquery.animate-shadow-min.js"></script>
+<script src="js/jquery.lazylinepainter-1.7.0.min.js"></script>
+<script>
+
+    var 
+    cubeContainer = $('.container'),
+    cube = $('#cube'),
+    side = $('#cube figure'),
+        
+    front = $('.front'),
+    back = $('.back'),
+    left = $('.left'),
+    right = $('.right'),
+    top = $('.top'),
+    bottom = $('.bottom')
+    ;
+	
+	$(window).load(function() {
+		
+		$('#outer').css({
+			backgroundImage:'url(images/space3.jpg)'
+		}).velocity({
+            opacity:'1'
+        }, {
+            duration:1000
+        });
+		
+	});
+    
+    $(window).resize(function invoked() {
+        
+        cubeContainer.velocity({
+           translateX:($(window).width() / 2) - (cubeContainer.width() / 2),
+           translateY:($(window).height() / 2) - (cubeContainer.height() / 2)
+        }, {
+            duration:0
+        });
+        
+        return invoked;
+        
+    }()
+                    );
+    
+    var cubeRotate = setInterval(function startCube() {
+    cube.velocity({
+                rotateX:'+=360deg',
+                rotateY:'+=360deg',
+                rotateZ:'+=360deg'
+    }, {
+        duration:6000,
+        easing:'linear',
+        complete:function() {
+        cube.velocity({
+                rotateX:'+=360deg',
+                rotateY:'+=360deg',
+                rotateZ:'+=360deg'
+        }, {
+            duration:6000,
+            easing:'linear'
+        });
+        }
+    });
+    
+    return startCube;
+}(), 12000);
+    
+</script>
+</body>
+</html>

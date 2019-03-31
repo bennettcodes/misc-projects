@@ -1,0 +1,37 @@
+<div id="home-mobile">
+    <div id="tile-container">
+        <div class="tile" ng-repeat="w in weatherResult.list">
+            <weather-report weather-day="w" convert-to-standard="convertToFahrenheit(daytimeTemp)" convert-to-day="convertToDay(dt)" day-format="EEE" convert-to-date="convertToDate(dt)" date-format="MMM d, y" cloud-format="convertToClouds(currentClouds)"></weather-report>
+        </div>
+    </div>
+
+    <h2>Weather<span class="smaller-h2"><span class="mobile"><br></span>Forecast by City</span></h2>
+
+    <div>
+
+        <div>
+
+            <div>
+
+                <form name="search-wrapper" autocomplete="off">
+                    <input type="text" name="search" ng-model="city" class="form-control" autofocus placeholder="Please enter your city" />
+                </form>
+
+            </div>
+
+            <!--<a href="#" class="btn btn-primary">Get Forecast</a>-->
+
+        </div>
+
+    </div>
+
+    <!--<h1>Forecast</h1>-->
+    <!--<hr />-->
+    <!--<div smooth-button class="container" ng-mouseenter="play()" ng-mouseleave="reverse()"></div>
+    <div smooth-button class="container" ng-mouseenter="play()" ng-mouseleave="reverse()"></div>
+    <div smooth-button class="container" ng-mouseenter="play()" ng-mouseleave="reverse()"></div>-->
+    <div id="link-list">
+        <div class="days-header">Days:</div> <a days-button class="page-link" href="#/2" ng-class="{ 'bg-primary': days === '2' }">2</a> <a days-button class="page-link" href="#/5" ng-class="{ 'bg-primary': days === '5' }">5</a> <a days-button class="page-link" href="#/7" ng-class="{ 'bg-primary': days === '7' }">7</a>
+        <div class="forecast-info">Forecast for <strong>{{ city }}</strong></div>
+    </div>
+</div>

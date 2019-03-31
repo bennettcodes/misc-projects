@@ -1,0 +1,241 @@
+body, html {
+    margin:0;
+    padding:0;
+}
+
+#container {
+    width:100%;
+    height:100vh;
+    position: relative; 
+    display: none;
+    overflow: hidden;
+    float:left;
+}
+
+#left {
+    width:50vw;
+    height:100vh;
+    
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&amp;0.2+0,0.4+100 */
+background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.4) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.4) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.4) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33000000', endColorstr='#66000000',GradientType=0 ); /* IE6-9 */
+    
+    position: absolute;
+    display: none;
+    top:0;
+    left:0;
+    z-index: 1;
+}
+
+#left-bg-container {
+    width:100%;
+    height:100%;
+    position: relative;
+    float:left;
+}
+
+#left-blurred-bg {
+    width:100%;
+    height:100%;
+    position: absolute;
+    background-image:url(../images/left-blurred-bg2.jpg);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: center;
+    top:0;
+    left:0;
+    box-shadow: inset 0 340px 360px rgba(255,255,255,1);
+    z-index: 5;
+}
+
+#left-bg {
+    width:100%;
+    height:100%;
+    position: absolute;
+    background-image:url(../images/left-bg4.jpg);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: center;
+    top:0;
+    left:0;
+    box-shadow: inset 0 340px 360px rgba(255,255,255,1);
+    z-index: 6;
+    opacity: 0;
+}
+
+#middle-vertical-break-top {
+    width: 1px;
+    height: 50vh;
+    background-color:rgba(0,0,0,1);
+    position: fixed;
+    top:0;
+    left:50vw;
+    z-index: 5;
+    opacity: 0;
+}
+
+#middle-vertical-break-bottom {
+    width: 1px;
+    height:50vh;
+    background-color:rgba(0,0,0,1);
+    position: fixed;
+    bottom:0;
+    left:50vw;
+    z-index: 5;
+    opacity: 0;
+}
+
+#middle-vertical-break-top-white {
+    width: 1px;
+    height: 50vh;
+    background-color:white;
+    position: fixed;
+    top:0;
+    left:50vw;
+    z-index: 6;
+    opacity: 0;
+}
+
+#middle-vertical-break-bottom-white {
+    width: 1px;
+    height:50vh;
+    background-color:white;
+    position: fixed;
+    bottom:0;
+    left:50vw;
+    z-index: 6;
+    opacity: 0;
+}
+
+#right-bg-container {
+    width:100%;
+    height:100%;
+    position: relative;
+    float:left;
+}
+
+#right-blurred-bg {
+    width:100%;
+    height:100%;
+    position: absolute;
+    background-image:url(../images/right-blurred-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: center;
+    top:0;
+    right:0;
+    box-shadow: inset 0 -340px 360px rgba(255,255,255,1);
+    z-index: 5;
+}
+
+#right-bg {
+    width:100%;
+    height:100%;
+    position: absolute;
+    background-image:url(../images/right-bg3.jpg);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: center;
+    top:0;
+    right:0;
+    box-shadow: inset 0 -340px 360px rgba(255,255,255,1);
+    z-index: 6;
+    opacity: 0;
+}
+
+#right {
+    width:50vw;
+    height:100vh;
+    
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&amp;0.4+0,0.2+100 */
+background: -moz-linear-gradient(top,  rgba(0,0,0,0.4) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(0,0,0,0.4) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(0,0,0,0.4) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66000000', endColorstr='#33000000',GradientType=0 ); /* IE6-9 */
+    
+    position: absolute;
+    display: none;
+    top:0;
+    right:0;
+    z-index: 1;
+}
+
+#circle {
+    width:300px;
+    height:300px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#686868+0,000000+100 */
+background: rgb(104,104,104); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(104,104,104,1) 0%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(104,104,104,1) 0%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(104,104,104,1) 0%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#686868', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+
+    position: fixed;
+    display: none;
+    border-radius: 50%;
+    top:calc(50% - 150px);
+    left:calc(50% - 150px);
+    opacity: 1;
+    z-index: 10;
+}
+
+#circle-alt {
+    width:298px;
+    height:298px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color:rgba(255,255,255,1);
+    position: fixed;
+    display: none;
+    border-width:1px;
+    border-style: solid;
+    border-color: rgba(0,0,0,1);
+    border-radius: 50%;
+    top:calc(50% - 150px);
+    left:calc(50% - 150px);
+    opacity: 0;
+    z-index: 9;
+}
+
+#brain-overlay {
+    width:100%;
+    height:100%;
+    position: absolute;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    top:0;
+    left:0;
+    z-index: 15;
+}
+
+#brain {
+    width:150px;
+    height:179px;
+    position: absolute;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    top:60.5px;
+    left:75px;
+    z-index: 14;
+}

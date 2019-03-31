@@ -1,0 +1,124 @@
+angular.callbacks._t({
+    "city": {
+        "id": 2972620,
+        "name": "Tierce",
+        "coord": {
+            "lon": -0.46609,
+            "lat": 47.615871
+        },
+        "country": "FR",
+        "population": 0
+    },
+    "cod": "200",
+    "message": 0.0294,
+    "cnt": 5,
+    "list": [{
+        "dt": 1456660800,
+        "temp": {
+            "day": 279.32,
+            "min": 274.81,
+            "max": 280.27,
+            "night": 274.81,
+            "eve": 277.97,
+            "morn": 279.32
+        },
+        "pressure": 1013.69,
+        "humidity": 74,
+        "weather": [{
+            "id": 801,
+            "main": "Clouds",
+            "description": "few clouds",
+            "icon": "02d"
+        }],
+        "speed": 8.37,
+        "deg": 39,
+        "clouds": 20
+    }, {
+        "dt": 1456747200,
+        "temp": {
+            "day": 278.43,
+            "min": 270.62,
+            "max": 280.03,
+            "night": 270.62,
+            "eve": 277.68,
+            "morn": 272.78
+        },
+        "pressure": 1026.85,
+        "humidity": 70,
+        "weather": [{
+            "id": 800,
+            "main": "Clear",
+            "description": "clear sky",
+            "icon": "01d"
+        }],
+        "speed": 7.16,
+        "deg": 26,
+        "clouds": 0
+    }, {
+        "dt": 1456833600,
+        "temp": {
+            "day": 280.55,
+            "min": 269.81,
+            "max": 282.87,
+            "night": 282.87,
+            "eve": 282.3,
+            "morn": 269.81
+        },
+        "pressure": 1026.02,
+        "humidity": 70,
+        "weather": [{
+            "id": 501,
+            "main": "Rain",
+            "description": "moderate rain",
+            "icon": "10d"
+        }],
+        "speed": 6.02,
+        "deg": 209,
+        "clouds": 88,
+        "rain": 4.31
+    }, {
+        "dt": 1456920000,
+        "temp": {
+            "day": 281.75,
+            "min": 278.16,
+            "max": 281.97,
+            "night": 278.16,
+            "eve": 280.54,
+            "morn": 280.18
+        },
+        "pressure": 1017.56,
+        "humidity": 96,
+        "weather": [{
+            "id": 500,
+            "main": "Rain",
+            "description": "light rain",
+            "icon": "10d"
+        }],
+        "speed": 9.61,
+        "deg": 277,
+        "clouds": 92,
+        "rain": 2.13
+    }, {
+        "dt": 1457006400,
+        "temp": {
+            "day": 280.73,
+            "min": 275.09,
+            "max": 282.05,
+            "night": 282.05,
+            "eve": 281.66,
+            "morn": 275.09
+        },
+        "pressure": 1019.1,
+        "humidity": 96,
+        "weather": [{
+            "id": 500,
+            "main": "Rain",
+            "description": "light rain",
+            "icon": "10d"
+        }],
+        "speed": 4.36,
+        "deg": 263,
+        "clouds": 92,
+        "rain": 2.19
+    }]
+});
